@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&family=Roboto+Slab:wght@200;400&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <span><img src="../static/images/banking.png" alt=""></span>
+                <span>CHARY BANK</span>
+            </div>
+            <div class="links">
+                <span><a href="{{ url_for('View_Customers') }}">View all Customers</a></span>
+                <span><a href="{{ url_for('History') }}">History</a></span>
+                <span><a href="{{ url_for('New_transfer') }}">Tranfer Amount</a></span>
+                <span><a  class="logout"href="#">Logout</a></span>
+            </div>
+        </div>
+        <div class="header">
+            <span class="side-image"><img src="../static/images/piggy-bank.png" alt=""></span>
+            <span class="chary">CHARY BANK<br><span class="main-text"> We care for you...</span><br><span class="trust-text">You are safe here.</span></span>
+        </div>
+        <div class="welcome">
+            <div class="welcome-img"><img src="../static/images/meeting.jpg" alt=""></div>
+            <div class="welcome-para">
+                <div class="welcome-title"> WELCOME TO CHARY!</div>
+                <div class="welcome-middle">Your safety is our top most priority</div>
+                <span>We are here to help you whenever you face<br>
+                     difficulties in your life. Customer satisfaction <br>
+                     is our key aim.</span>
+            </div>
+        </div>
+        <div class="contact-form">
+            <div class="contact-text">
+                <span class="contact-title">Request a Call Back</span>
+                <br><br>
+                <span>Posters had been a very beneficial marketing tool because<br><br> it had paved to deliver an effective message that conveyed<br><br> customer’s attention.</span>
+            </div>
+            <div class="contact-box">
+                <input type="text" class="form-input" placeholder="Name">
+                <input type="text" class="form-input" placeholder="Email"><br>
+                <input type="text" class="form-input" placeholder="Phone">
+                <button class="button">Submit</button>
+            </div>
+        </div>
+        <div class="why-choose-us">
+            <span class="why-choose-us-title">Why Choose Us?</span>
+            <span class="why-choose-us-desc">Here are some reasons why you should choose us.</span>
+            <div class="why-choose-us-cards">
+                <div class="row-1">
+                    <div class="card">
+                        <span class="image-circle"><img src="../static/images/clock.png" alt=""></span>
+                        <span class="card-header">Quick & Easy</span><br>
+                        <span>Get best services at the easiest and quickest way possible.</span>
+                    </div>
+                    <div class="card">
+                        <span class="image-circle"><img src="../static/images/credit-card.png" alt=""></span>
+                        <span class="card-header">Absolute Security</span><br>
+                        <span>Your details are always kept confidential</span>
+                    </div>
+                    <div class="card">
+                        <span class="image-circle"><img src="../static/images/thumbs-up.png" alt=""></span>
+                        <span class="card-header">Quick approval</span><br>
+                        <span>Explore the power of simpler and smarter banking.</span>
+                    </div>
+                </div>
+                <div class="row-1">
+                    <div class="card">
+                        <span class="image-circle"><img src="../static/images/business-and-finance.png" alt=""></span>
+                        <span class="card-header">Low interest rates</span><br>
+                        <span>Explore the power of simpler<br> and smarter banking.<br> Bank online with over 250 services</span>
+                    </div>
+                    <div class="card">
+                        <span class="image-circle"><img src="../static/images/shield.png" alt=""></span>
+                        <span class="card-header">Personal security</span><br>
+                        <span>Customer safety is our topmost priority</span>
+                    </div>
+                    <div class="card">
+                        <span class="image-circle"><img src="../static/images/coin.png" alt=""></span>
+                        <span class="card-header">Disbursement day</span><br>
+                        <span>Explore the power of simpler<br> and smarter banking.<br> Bank online with over 250 services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="copyright">
+                
+                <div class="footer-head">CHARY BANK</div>
+                <span>Copyright&copy;Gaunisha Gaanavi G</span>
+            </div>
+            <div class="social">
+                <div class="social-title">Contact Us At</div><br>
+                <span><img src="../static/images/facebook-circular-logo.png" alt="">Facebook</span><br>
+                <span><img src="../static/images/instagram.png" alt="">Instagram</span><br>
+                <span><img src="../static/images/twitter.png" alt="">Twitter</span><br>
+                <span><img src="../static/images/whatsapp.png" alt="">Whatsapp</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

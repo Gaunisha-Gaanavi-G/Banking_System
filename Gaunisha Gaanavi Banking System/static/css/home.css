@@ -1,0 +1,202 @@
+/* font-family: 'Ephesis', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif; */
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Montserrat', sans-serif;
+    font-size:15px;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+a:hover{
+    color:rgb(168, 168, 168);
+}
+.nav{
+    background-color: rgb(29, 48, 66);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:20px 60px;
+    align-items: center;
+    position:sticky;
+}
+.logo span,.links span{
+    margin-right:30px;
+}
+.logo img,.card img{
+    width:40px;
+    height:40px;
+}
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+}
+.logout{
+    padding:10px 18px;
+    background-color: rgb(63, 212, 130);
+    border-radius: 50px ;
+}
+.logout:hover{
+    background-color: rgb(45, 150, 92);
+    color:white;
+}
+.header{
+    background-color: rgb(29, 48, 66);
+    font-size:50px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:100px;
+    color:white;
+}
+.side-image img{
+    width:250px;
+    height:250px;
+}
+.chary{
+    font-family: 'Roboto Slab', serif;
+    font-weight:600;
+    letter-spacing:3px;
+}
+.main-text,.trust-text{
+    font-size:25px;
+    font-family: 'Ephesis', cursive;
+
+}
+.trust-text{
+    margin-left:180px;
+}
+.why-choose-us{
+    display:flex;
+    margin:100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.why-choose-us-title,.welcome-title{
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: 'Roboto Slab', serif;
+    font-weight:600;
+    margin-bottom:20px;
+}
+.row-1{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom:20px;
+    margin:20px;
+}
+.card{
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:30px;
+    margin:20px;
+}
+.card-header{
+    font-weight:600;
+    font-size:18px;
+    margin-top:-20px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px;
+}
+.image-circle{
+    background-color: rgb(29, 48, 66);
+    height:40px;
+    width:40px;
+    padding:20px;
+    border-radius: 50px 50px;
+    position:relative;
+    top:-50px;
+}
+.contact-form{
+    background-color: rgb(49, 49, 49);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding: 60px  170px;
+    font-weight:600px;
+}
+.contact-title{
+    font-size:30px;
+    font-family: 'Roboto Slab', serif;
+}
+.form-input{
+    border:none;
+    outline:none;
+    background-color: white;
+    border-bottom: 2px solid white;
+    margin:15px;
+    padding:15px;
+    font-family:'Montserrat', sans-serif;
+    border-radius: 3px;
+}
+.button{
+    background-color:rgb(69, 153, 0);
+    color:white;
+    border:none;
+    outline:none;
+    padding:15px 25px;
+    font-family:'Montserrat', sans-serif;
+    border-radius: 3px;
+}
+.button:hover{
+    background-color:rgb(48, 104, 2);
+}
+.footer{
+    background-color: rgb(49, 49, 49);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:60px 200px;
+}
+.social-title{
+    font-size:30px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom:10px;
+}
+.social img{
+    margin-right:15px;
+    height:25px;
+    width:25px;
+    opacity:0.6
+}
+.social span{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:13px;
+}
+.welcome{
+    display:flex;
+    justify-content: space-around;
+    margin:100px 0px;
+    align-items: center;
+    line-height: 30px;
+}
+.welcome-img img{
+    height:400px;
+    width:600px;
+}
+.welcome-middle{
+    font-size:25px;
+    margin:20px;
+    font-family: 'Ephesis', cursive;
+}
+.footer-head{
+    margin:30px 0px;
+    font-size:40px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 3px;
+}

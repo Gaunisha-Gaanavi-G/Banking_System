@@ -1,0 +1,120 @@
+/* font-family: 'Ephesis', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif; */
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Montserrat', sans-serif;
+    font-size:15px;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+.nav{
+    background-color: rgb(29, 48, 66);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:20px 60px;
+    align-items: center;
+    position:sticky;
+}
+.logo span,.links span{
+    margin-right:30px;
+}
+.logo img,.card img{
+    width:40px;
+    height:40px;
+}
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+}
+.logout{
+    padding:10px 18px;
+    background-color: rgb(63, 212, 130);
+    border-radius: 50px ;
+}
+.logout:hover{
+    background-color: rgb(45, 150, 92);
+    color:white;
+}
+.body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.body-header{
+    font-size:30px;
+    font-family:'Roboto Slab', serif;
+    letter-spacing: 2px;
+    margin-top:20px;
+}
+.table{
+    background-color: rgb(23, 41, 61);
+    color:white;
+    border:1px solid white;
+    width:80%;
+    text-align: center;
+    margin:60px;
+    border-radius: 8px;
+}
+th,td{
+    width:230px;
+    padding:25px 0px;
+}
+
+tr:hover{
+    background-color: rgb(30, 52, 78);
+}
+tr:first-child{
+    background-color: rgb(39, 67, 102);
+}
+.transfer{
+    outline:none;
+    border:none;
+    background-color:rgb(55, 129, 98);
+    padding:10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-family:'Montserrat', sans-serif;
+}
+.transfer:hover{
+    background-color:rgb(79, 165, 129);
+}
+.footer{
+    background-color: rgb(49, 49, 49);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:60px 200px;
+}
+.social-title{
+    font-size:30px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom:10px;
+}
+.social img{
+    margin-right:15px;
+    height:25px;
+    width:25px;
+    opacity:0.6
+}
+.social span{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:13px;
+}
+.footer-head{
+    margin:30px 0px;
+    font-size:40px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 3px;
+}

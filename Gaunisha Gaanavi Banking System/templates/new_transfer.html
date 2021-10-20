@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&family=Roboto+Slab:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Transfer</title>
+    <link rel="stylesheet" href="../static/css/transfer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <span><img src="../static/images/banking.png" alt=""></span>
+                <span>CHARY BANK</span>
+            </div>
+            <div class="links">
+                <span><a  class="logout" href="{{ url_for('Home') }}">Back</a></span>
+            </div>
+        </div>
+        <div class="body">
+            {% with messages=get_flashed_messages() %} 
+                {% if messages %} 
+                    {% for message in messages %} 
+                    <div class="alert alert-danger alert-dismissible">
+                        <strong> {{ message }} </strong> 
+                        <button type="button" class="close" data-dismiss="alert" onclick="dis()"><i class="fas fa-times"></i></button>
+                        
+                    </div>
+                    <script>function dis(){
+                        document.getElementsByClassName('alert')[0].style.display='none';
+                        }
+                    </script>
+                    {% endfor %} 
+                {% endif %} 
+            {% endwith %} 
+            <div class="body-header">Tranfer Amount</div>
+            
+                <div class="info-box">
+                    <form action="{{ url_for('New_transfer') }}" method="POST">
+                        <div class="choose-box">
+                            <span>Sender Name: 
+                                <select class="form-input" name="sender_name" id="name">
+                                    {% for i in all_data %}
+                                    <option class="input-choices" value="{{i.Name}}">{{i.Name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </span>
+                            <br>
+                            <span>Account Number: <input class="form-input" type="text" name="sender_account"></span><br>
+                            <span>Amount: <input class="form-input" type="text" name="amount"></span><br>
+                                <span>Receiver Name: 
+                                    <select class="form-input" name="receiver_name" id="name">
+                                        {% for i in all_data %}
+                                        <option class="input-choices" value="{{i.Name}}">{{i.Name}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </span>
+                                <br>
+                                <span>Account No: <input class="form-input" type="text" name="receiver_account"></span><br>
+                                <span>Message: <input class="form-input" type="text" name="msg"></span><br>
+                                <button class="button" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <br>
+            
+        </div>
+        
+        <div class="footer">
+            <div class="copyright">
+                
+                <div class="footer-head">CHARY BANK</div>
+                <span>Copyright&copy;Gaunisha Gaanavi G</span>
+            </div>
+            <div class="social">
+                <div class="social-title">Contact Us At</div><br>
+                <span><img src="../static/images/facebook-circular-logo.png" alt="">Facebook</span><br>
+                <span><img src="../static/images/instagram.png" alt="">Instagram</span><br>
+                <span><img src="../static/images/twitter.png" alt="">Twitter</span><br>
+                <span><img src="../static/images/whatsapp.png" alt="">Whatsapp</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
